@@ -7,9 +7,18 @@
 <body>
 <form action="/upload" enctype="multipart/form-data" method="post">
     <input type="file" name="file"/>
+    <input id = "permanent" type="checkbox" name="noDelete" value="true"/>Make Permanent<br>
+    <input id = "comment" type = "text" placeholder="Change Filename to Display" name="comment"/>
+    <input id= "password" name="password" type="password" placeholder="Enter optional password"/>
     <button type="submit">Upload</button>
 </form>
-<div id="fileList"></div>
+
+<div id="fileList">
+    <form>
+
+    </form>
+</div>
+
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 <script src="main.js"></script>
 </body>

@@ -19,6 +19,16 @@ public class AnonFile {
     @Column(nullable = false)
     private String originalFilename;
 
+    @Column(nullable = false)
+    private boolean permanent;
+
+    @Column
+    private String comment;
+
+    @Column
+    private String password;
+
+
     public AnonFile() {
     }
 
@@ -50,4 +60,29 @@ public class AnonFile {
     public void setOriginalFilename(String originalFilename) {
         this.originalFilename = originalFilename;
     }
+
+    public boolean isPermanent() {
+        return permanent;
+    }
+
+    public void setPermanent(boolean permanent) {
+        this.permanent = permanent;
+    }
+
+    public String getComment() {
+        return comment;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }
+
